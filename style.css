@@ -1,11 +1,8 @@
 body{
-    width: 100vw;
-    height: 100%;
+    width: 100vw !important;
+    max-width: 1920px;
     margin: 0; padding: 0;
     box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -15,8 +12,7 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'Raleway', sans-serif;
 }
 .container{
-    width: 1440px !important;
-    height: 2335px;
+    width: 100vw !important;
 }
 
 /* header */
@@ -321,4 +317,285 @@ footer{
     padding: .3em;
     border: 1px solid white;
     border-radius: 100px;
+}
+
+
+/*  media */
+
+
+@media only screen and ( max-width: 1250px) {
+
+    .started_form input{
+        width: 40%;
+    }
+    
+    .started_form button{
+        width: 30%;
+    }
+
+    .works_header h1{
+        width: 70%;
+    } 
+
+}
+
+@media only screen and ( max-width: 1100px) {
+    
+    .started_img_box{
+        margin-right: 1em;
+        width: 40%;
+    }
+    .started_header{
+        position: relative;
+        top: 0em;
+        width: 60%;
+    }
+
+
+    .works::before{
+        top: -4rem;
+    }
+    .works_img_box{
+        margin-right: 1em;
+        width: 40%;
+    }
+    .works_header{
+        width: 60%;
+    }
+    .works_header h1{
+        width: 70%;
+        font-size: 2.4rem;
+    }
+    .works_header p {
+        font-size: 1em;
+        width: 100%;
+    }
+    .works_avator_box{
+        margin-top: 1em;
+    }
+    .works_avator_box p{
+        width: 100%;
+        font-size: .9em;
+    }
+
+
+    .avatar_header h4{
+        font-size: 0.9em;
+    }
+    .avatar_header p{
+        font-size: 0.8em;
+    }
+    .access_header h1{
+        font-size: 2.2rem;
+    }
+    .access_header p{
+        font-size: 1rem;
+    }
+    .access_form{
+        width: 40%;
+    }
+    .access_btn{
+        padding: 1em 1em;
+        font-size: 0.85em;
+    }
+}
+
+
+@media only screen and ( max-width: 900px) {
+
+    .get_started{
+        flex-direction: column;
+    }
+    .started_img_box{
+        width: 95%;
+    }
+    .started_header{
+        width: 95%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .started_header h1 {
+        margin: 0; padding: 0;
+        text-align: center;
+    }
+    .started_header p{
+        width: 100%;
+        margin: 0; padding: 0;
+        text-align: center;
+    }
+    .started_form{
+        margin: 0; padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .started_form input{
+        width: calc(100% - 2em);
+        padding: 1em 1em;
+        margin: 2em 0em;
+    }
+    .started_form button{
+        width: 100%;
+        padding: 1em 1em;
+        margin: 0em 0em;
+        font-size: 1em;
+        letter-spacing: .2em;
+    }
+
+
+
+    .works{
+        flex-direction: column;
+    }
+    .works_img_box{
+        width: 95%;
+    }
+    .works_img{
+        width: 100%;
+        margin-left: 0em;
+    }
+    .works_header{
+        margin-top: 5em;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .works_header h1{
+        width: 100%;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .works_header p {
+        font-size: 1em;
+        width: 100%;
+    }
+    .works_fylo{
+        font-size: 1.2em;
+    }
+    .works_fylo img {
+        width: 1.2em
+    }
+    .works_avator_box{
+        margin-top: 3em;
+        width: 25em;
+        background-color: white;
+        border-radius: 5px;
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        box-shadow: 0px 0px 30px -25px hsl(243, 87%, 12%);
+    }
+    .works_avator_box p{
+        width: 100%;
+        font-size: 1em;
+    }
+    .qoutes_img{
+        width: 1em;
+    }
+    .avatar_header h4{
+        font-size: 1em;
+    }
+    .avatar_header p{
+        font-size: 0.9em;
+    }
+
+
+    .access{
+        flex-direction: column;
+    }
+    .access_header{
+        width: 95%;
+        text-align: center;
+        color: white
+    }
+    .access_header p{
+        font-size: 1.2rem;
+        color: white;
+    }
+    .access_form{
+        width: 95%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .access_email{
+        width: calc( 50% - 2em);
+        padding: 1.2em 1em;
+        margin: .5em 0em;
+    }
+    .access_email::placeholder{
+        font-size: 1.2em;
+    }
+    .access_btn{
+        width: 50%;
+        padding: 1em;
+        margin: .5em 0em;
+        font-size: 1.2em;
+    }
+
+
+    footer{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 5rem 3rem;
+        background-color: hsl(243, 87%, 12%);
+        color: hsl(0, 0%, 75%);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer_logo_box{
+        width: 100%;
+        margin: .5em 0em;
+    }
+    .footer_list{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer_item:nth-child(1){
+        width: 100%;
+        color: white !important;
+    }
+    .phone,.email{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .phone_img,.email_img{
+        width: 1rem;
+        height: 1rem;
+        padding-right: 1em;
+    }
+    .footer_item:nth-child(2),
+    .footer_item:nth-child(3){
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        color: white !important;
+    }
+    .footer_item:nth-child(4){
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .fb,.tt,.in{
+        margin: 0em .5rem;
+    }
+    .fb_logo,.tt_logo,.in_logo{
+        margin-top: .5rem;
+        width: 1rem;
+        height: 1rem;
+        padding: .3em;
+        border: 1px solid white;
+        border-radius: 100px;
+    }
+
+
 }
